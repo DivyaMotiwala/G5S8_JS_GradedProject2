@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/resumepage.css">
+    <link rel="stylesheet" href="css/utils.css">
+</head>
+
+<body>
+    <div class="parent-flex-container">
+
+        <!-- Search box -->
+        <div class="search-flex-container">
+            <button onclick="showPrevRecord()" id=button-prev>Previous</button>
+            <input type="search" name="searchKeyword" id="searchKeyword"
+                placeholder="search for keywords to filter the resume" onkeyup="search_applicant()" onsearch="search_applicant()" >
+            <button onclick="showNextRecord()" id=button-next>Next</button>
+        </div>
+        <div class="resume-flex-container">
+
+            <!-- Title area -->
+            <div class="title-flex-container">
+                <div class="title-left-container">
+                    <h1 id="person-name-text">Name</h1>
+                    <br>
+                    <h4 id="applied-for-text">Applied for</h4>
+                </div>
+                <div class="title-right-container">
+                    <img src="img/icons8-user-96.png" alt="profile pic">
+                </div>
+            </div>
+
+            <!-- Personal and work details area -->
+            <div class="info-grid-container">
+                <div class="personal-info-grid-container">
+                    <h4>Personal Information</h4>
+                    <p id="personal-info-text"></p>
+                    <br>
+                    <h4>Technical Skills</h4>
+                    <p id="skills-text"></p>
+                    <br>
+                    <h4>Hobbies</h4>
+                    <p id="hobbies-text"> </p>
+                    
+                </div>
+
+
+                <!-- Work info -->
+                <div class="details-grid-container">
+                    <h3>Work Experience in previous company</h3>
+                    <br>
+                    <b>Company Name : </b>
+                    <span id="company-name-placeholder">NA</span>
+                    <br><br>
+
+                    <b>Position : </b>
+                    <span id="position-name-placeholder">NA</span>
+                    <br><br>
+
+                    <b>Start Date : </b>
+                    <span id="start-date-placeholder">NA</span>
+                    <br><br>
+
+                    <b>End date : </b>
+                    <span id="end-date-placeholder">NA</span>
+                    <br><br>
+
+                    <b>Summary : </b>
+                    <span id="summary-placeholder">NA</span>
+                    <br><br>
+
+                    <h3>Projects</h3>
+                    <br>
+                    <p id="projects-details"></p>
+                    <br><br>
+
+                    <h3>Education</h3>
+                    <br>
+                    <p id="education-details"></p>
+                    <br><br>
+
+                    <h3>Internship</h3>
+                    <br>
+                    <p id="internship-details"></p>
+                    <br><br>
+
+                    <h3>Achievements</h3>
+                    <br>
+                    <p id="achievement-details">
+                    </p>
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="error-image">
+            <img src="img/error_msg.png" alt="Error" >
+        </div>
+    </div>
+    <script src="js/resume.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+body {
+    margin: 15px;
+}
+
+.parent-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+}
+
+.search-flex-container button {
+    border: solid black 1px;
+    padding: 8px;
+}
+
+.search-flex-container input {
+    border: solid black 2px;
+    padding: 6px;
+    min-width: 15rem;
+
+
+}
+
+.resume-flex-container {
+    display: flex;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 15px 25px;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.title-flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #d1f6f0;
+    min-height: 20%;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+}
+
+.title-left-container {
+    width: 70%;
+}
+
+.title-right-container {
+    width: 30%;
+}
+
+.info-grid-container {
+    min-height: 70%;
+    display: grid;
+    column-gap: 35px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-template-areas: 'menu main main'
+        'menu main main';
+    overflow: scroll;
+}
+
+.personal-info-grid-container {
+    grid-area: menu;
+    background-color: #f8e2e2;
+    height: fit-content;
+    padding: 16px;
+    text-align: right;
+}
+
+.personal-info-grid-container h4 {
+    background-color: #a9a9a9;
+    text-align: left;
+    padding: 4px;
+}
+
+.details-grid-container {
+    grid-area: main;
+    margin-left: 32px;
+}
+
+.details-grid-container h3 {
+    padding: 8px 0;
+    margin-left: -32px;
+}
+
+.error-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.error-image img {
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .error-image img {
+        width: 100%;
+        height: 80%;
+    }
+    .title-right-container img{
+        width: 30%;
+        height: 30%;
+    }
+    .title-left-container{
+        padding: 0px;
+    }
+  
+}
+
+@media screen and (max-height: 600px) {
+    .error-image img {
+        width: 100%;
+        height: 80%;
+    }
+    .title-right-container img{
+        width: 30%;
+        height: 30%;
+    }
+    .title-left-container{
+        padding: 0px;
+        font-size: small;
+    }
+}
