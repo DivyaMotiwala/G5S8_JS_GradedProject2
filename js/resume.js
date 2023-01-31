@@ -139,7 +139,6 @@ function disableEnableButtons() {
 }
 
 function search_applicant(event) {
-    console.log("search called");
     var searchArray = new Array();
     let search_input = document.getElementById('searchKeyword').value.toLowerCase();
     resumeParentArray.forEach(element => {
